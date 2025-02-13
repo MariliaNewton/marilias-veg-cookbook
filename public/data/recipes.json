@@ -1,0 +1,535 @@
+[
+  {
+    "id": 1,
+    "name": "Vegan Sushi",
+    "category": "main",
+    "imageUrl": "/images/vegan-sushi.jpg",
+    "time": "30 min",
+    "servings": 2,
+    "tags": ["vegan", "raw", "gluten-free"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "2 cups sushi rice",
+      "2 1/2 cups water",
+      "1/4 cup rice vinegar",
+      "1 tbsp sugar",
+      "1 tsp salt",
+      "4-5 nori sheets",
+      "1 avocado, sliced",
+      "1 cucumber, julienned",
+      "1 carrot, julienned",
+      "Soy sauce for dipping"
+    ],
+    "instructions": [
+      "Rinse the sushi rice under cold water until the water runs clear.",
+      "Combine rice and water in a pot and cook until tender. Let it cool slightly.",
+      "Mix rice vinegar, sugar, and salt in a small bowl until dissolved. Stir into the rice.",
+      "Place a nori sheet on a bamboo sushi mat and spread a thin layer of rice.",
+      "Top with avocado, cucumber, and carrot.",
+      "Roll tightly and slice into 6-8 pieces.",
+      "Serve with soy sauce."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Soya Chunks in Tomato Sauce",
+    "category": "main",
+    "imageUrl": "/images/soya-chunks.jpg",
+    "time": "40 min",
+    "servings": 4,
+    "tags": ["vegan", "comfort food"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "200g soya chunks",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "2 tomatoes, pureed",
+      "1 tbsp tomato paste",
+      "1/2 tsp cumin",
+      "1/2 tsp coriander",
+      "1 tsp paprika",
+      "1 tbsp olive oil",
+      "1/2 cup water",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Soak the soya chunks in hot water for 10 minutes and drain.",
+      "Heat oil in a pan and sauté the onions and garlic until soft.",
+      "Add the pureed tomatoes, tomato paste, cumin, coriander, and paprika.",
+      "Cook for 5 minutes until the sauce thickens.",
+      "Add soya chunks and water, and simmer for 15 minutes.",
+      "Season with salt and pepper, and serve."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cuscuz (Tapioca)",
+    "category": "breakfast",
+    "imageUrl": "/images/cuscuz-tapioca.jpg",
+    "time": "25 min",
+    "servings": 3,
+    "tags": ["vegan", "gluten-free"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 cup tapioca pearls",
+      "1 1/2 cups water",
+      "1 tbsp olive oil",
+      "1/2 tsp salt",
+      "Chopped parsley, for garnish"
+    ],
+    "instructions": [
+      "Boil water with salt and olive oil.",
+      "Gradually add tapioca pearls while stirring.",
+      "Cover and simmer for 10-12 minutes, stirring occasionally.",
+      "Once tapioca is translucent, remove from heat.",
+      "Let it rest for 5 minutes, then fluff with a fork.",
+      "Garnish with chopped parsley and serve."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Lentil Red Curry",
+    "category": "main",
+    "imageUrl": "/images/lentil-curry.jpg",
+    "time": "35 min",
+    "servings": 4,
+    "tags": ["vegan", "spicy"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 cup red lentils",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tbsp grated ginger",
+      "1 tbsp curry powder",
+      "1/2 tsp turmeric",
+      "1 can coconut milk",
+      "1 can diced tomatoes",
+      "1 cup vegetable broth",
+      "1 tbsp olive oil",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Heat olive oil in a pan and sauté the onions, garlic, and ginger until softened.",
+      "Add curry powder and turmeric and cook for 1 minute.",
+      "Stir in the lentils, coconut milk, diced tomatoes, and vegetable broth.",
+      "Simmer for 25-30 minutes, until lentils are tender.",
+      "Season with salt and pepper and serve."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Naan-like Bread",
+    "category": "main",
+    "imageUrl": "/images/naan-bread.jpg",
+    "time": "2 hours",
+    "servings": 6,
+    "tags": ["vegetarian", "bread"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "1/2 tsp baking powder",
+      "1 tsp sugar",
+      "1/2 tsp salt",
+      "1/2 cup warm water",
+      "1/4 cup plain yogurt",
+      "1 tbsp olive oil",
+      "2 tbsp melted butter (or plant-based alternative)"
+    ],
+    "instructions": [
+      "Mix the flour, baking powder, sugar, and salt in a bowl.",
+      "Add warm water, yogurt, and olive oil. Knead the dough for 10 minutes.",
+      "Cover the dough and let it rise for 1-2 hours.",
+      "Preheat a skillet over medium-high heat.",
+      "Roll out the dough and cook for 2-3 minutes on each side.",
+      "Brush with melted butter before serving."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Mushroom Creamy Soup",
+    "category": "starter",
+    "imageUrl": "/images/mushroom-soup.jpg",
+    "time": "40 min",
+    "servings": 4,
+    "tags": ["vegetarian", "comfort food"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "400g mushrooms, sliced",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 cup vegetable broth",
+      "1 cup heavy cream or plant-based alternative",
+      "1 tbsp olive oil",
+      "1 tsp thyme",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Sauté the onions and garlic in olive oil until soft.",
+      "Add the mushrooms and thyme and cook until mushrooms release their liquid.",
+      "Pour in the vegetable broth and simmer for 10 minutes.",
+      "Add the cream and season with salt and pepper.",
+      "Blend until smooth, then serve."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Blue Cheese Pear Risotto",
+    "category": "main",
+    "imageUrl": "/images/pear-risotto.jpg",
+    "time": "40 min",
+    "servings": 4,
+    "tags": ["vegetarian", "comfort food"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 1/2 cups Arborio rice",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 pear, diced",
+      "1/2 cup blue cheese, crumbled",
+      "1 cup vegetable broth",
+      "1/2 cup white wine",
+      "2 tbsp olive oil",
+      "1/2 cup grated parmesan"
+    ],
+    "instructions": [
+      "Heat olive oil in a pan and sauté the onion and garlic.",
+      "Add the rice and cook, stirring, for 2 minutes.",
+      "Add the wine and let it absorb.",
+      "Gradually add broth, stirring constantly, until the rice is tender.",
+      "Stir in the pear, blue cheese, and parmesan, and serve."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Banana Muffins",
+    "category": "sweet",
+    "imageUrl": "/images/banana-muffins.jpg",
+    "time": "25 min",
+    "servings": 12,
+    "tags": ["vegan", "sweet"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "3 ripe bananas, mashed",
+      "1 1/2 cups flour",
+      "1/2 cup sugar",
+      "1 tsp baking soda",
+      "1/2 tsp baking powder",
+      "1/4 tsp salt",
+      "1/4 cup plant-based milk",
+      "1/4 cup vegetable oil"
+    ],
+    "instructions": [
+      "Preheat oven to 180°C (350°F) and line a muffin tray with paper liners.",
+      "Mash the bananas and mix with the milk, oil, and sugar.",
+      "Add the dry ingredients and mix until combined.",
+      "Spoon the batter into the muffin tray and bake for 18-20 minutes."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Avocado Toast with Eggs and Mushrooms",
+    "category": "breakfast",
+    "imageUrl": "/images/avo-toast.jpg",
+    "time": "15 min",
+    "servings": 2,
+    "tags": ["vegetarian", "breakfast"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "2 slices whole-grain bread",
+      "1 avocado, mashed",
+      "2 eggs",
+      "100g mushrooms, sliced",
+      "1 tbsp olive oil",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Toast the bread and spread with mashed avocado.",
+      "Sauté the mushrooms in olive oil until golden.",
+      "Fry the eggs to your preference and place on the avocado toast.",
+      "Top with mushrooms, season with salt and pepper, and serve."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Chia Pudding with Passionfruit",
+    "category": "breakfast",
+    "imageUrl": "/images/chia-pudding.jpg",
+    "time": "10 min prep + overnight",
+    "servings": 2,
+    "tags": ["vegan", "gluten-free", "dessert"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "3 tbsp chia seeds",
+      "1 cup coconut milk",
+      "1 tbsp maple syrup",
+      "2 passionfruit, scooped"
+    ],
+    "instructions": [
+      "Mix chia seeds, coconut milk, and maple syrup in a bowl.",
+      "Refrigerate overnight to thicken.",
+      "Top with passionfruit before serving."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Pasta Salad",
+    "category": "starter",
+    "imageUrl": "/images/pasta-salad.jpg",
+    "time": "20 min",
+    "servings": 4,
+    "tags": ["vegetarian", "salad"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "200g pasta",
+      "2 tomatoes, chopped",
+      "1 avocado, diced",
+      "2 hard-boiled eggs, chopped",
+      "1 tbsp olive oil",
+      "1 tsp balsamic vinegar",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Cook the pasta and let it cool.",
+      "Mix with tomatoes, avocado, eggs, olive oil, vinegar, salt, and pepper.",
+      "Serve chilled."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Coconut Rice and Crispy Tofu",
+    "category": "main",
+    "imageUrl": "/images/coconut-rice-tofu.jpg",
+    "time": "40 min",
+    "servings": 4,
+    "tags": ["vegan", "gluten-free"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 cup rice",
+      "1 can coconut milk",
+      "200g tofu, pressed and cubed",
+      "1 tbsp olive oil",
+      "1 tsp soy sauce",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Cook the rice with coconut milk according to package instructions.",
+      "Pan-fry the tofu in olive oil until crispy, seasoning with soy sauce, salt, and pepper.",
+      "Serve the rice topped with tofu."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Vegetable Barbecue Skewers",
+    "category": "main",
+    "imageUrl": "/images/vegetable-barbecue.jpg",
+    "time": "25 min",
+    "servings": 4,
+    "tags": ["vegan", "grilled"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 red bell pepper, cut into chunks",
+      "1 zucchini, sliced",
+      "1 onion, cut into chunks",
+      "1 cup cherry tomatoes",
+      "1 tbsp olive oil",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Thread vegetables onto skewers.",
+      "Brush with olive oil and season with salt and pepper.",
+      "Grill for 10-15 minutes, turning occasionally."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Fudgy Brownies",
+    "category": "sweet",
+    "imageUrl": "/images/brownies.jpg",
+    "time": "30 min",
+    "servings": 12,
+    "tags": ["vegetarian", "sweet"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "1/2 cup cocoa powder",
+      "1 cup sugar",
+      "1/2 cup melted butter",
+      "2 eggs",
+      "1 tsp vanilla extract",
+      "1/4 tsp salt"
+    ],
+    "instructions": [
+      "Preheat oven to 180°C (350°F) and grease a baking pan.",
+      "Mix all ingredients in a bowl until smooth.",
+      "Bake for 25-30 minutes and let cool before slicing."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Goat Cheese and Honey Pizza",
+    "category": "main",
+    "imageUrl": "/images/cheese-pizza.jpg",
+    "time": "25 min",
+    "servings": 2,
+    "tags": ["vegetarian", "savory"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 pizza dough",
+      "1/2 cup goat cheese",
+      "1 tbsp honey",
+      "1/2 cup arugula",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Preheat oven to 220°C (425°F).",
+      "Roll out pizza dough and top with goat cheese and honey.",
+      "Bake for 15-20 minutes until the crust is golden.",
+      "Top with arugula and drizzle with olive oil before serving."
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Yellow Chickpea Curry",
+    "category": "main",
+    "imageUrl": "/images/chickpea-curry.jpg",
+    "time": "30 min",
+    "servings": 4,
+    "tags": ["vegan", "spicy"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 cup yellow chickpeas, soaked overnight",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 can coconut milk",
+      "1 tbsp curry powder",
+      "1 tsp turmeric",
+      "1 cup vegetable broth",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Sauté onions and garlic in oil until soft.",
+      "Add curry powder, turmeric, and chickpeas.",
+      "Stir in coconut milk and vegetable broth and simmer for 20 minutes.",
+      "Season with salt and pepper and serve."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "White Cake with Strawberry",
+    "category": "sweet",
+    "imageUrl": "/images/white-cake-strawberry.jpg",
+    "time": "40 min",
+    "servings": 8,
+    "tags": ["vegetarian", "sweet"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "1/2 cup sugar",
+      "1/4 cup vegetable oil",
+      "1 tsp vanilla extract",
+      "1 tsp baking powder",
+      "1/4 tsp salt",
+      "1/2 cup milk",
+      "1 cup fresh strawberries, sliced"
+    ],
+    "instructions": [
+      "Preheat oven to 180°C (350°F) and grease a cake pan.",
+      "Mix dry ingredients and add wet ingredients.",
+      "Fold in strawberries and bake for 25-30 minutes.",
+      "Let cool before serving."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Risoni Pasta in Creamy Tomato Sauce",
+    "category": "main",
+    "imageUrl": "/images/risoni-tomato-sauce.jpg",
+    "time": "25 min",
+    "servings": 4,
+    "tags": ["vegetarian", "comfort food"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "200g risoni pasta",
+      "1 can crushed tomatoes",
+      "1/2 cup cream or plant-based cream",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tbsp olive oil",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Cook risoni pasta according to package instructions.",
+      "Sauté onion and garlic in olive oil until softened.",
+      "Stir in tomatoes and cream, simmer for 5 minutes.",
+      "Toss pasta in sauce, season with salt and pepper, and serve."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Wild Rice and Tomato Risotto",
+    "category": "main",
+    "imageUrl": "/images/tomato-risotto.jpg",
+    "time": "45 min",
+    "servings": 4,
+    "tags": ["vegetarian", "comfort food"],
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 cup wild rice",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 can diced tomatoes",
+      "1/2 cup vegetable broth",
+      "1/4 cup white wine",
+      "1 tbsp olive oil",
+      "Salt and pepper, to taste"
+    ],
+    "instructions": [
+      "Cook wild rice according to package instructions.",
+      "Sauté onions and garlic in olive oil until softened.",
+      "Stir in tomatoes, broth, and white wine.",
+      "Add rice and cook, stirring occasionally, until the sauce thickens."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Fake Meat Ragu & Polenta",
+    "category": "main",
+    "imageUrl": "/images/fake-meat-ragu.jpg",
+    "time": "45 min",
+    "servings": 3,
+    "tags": ["vegan", "comfort food", "gluten-free"],
+    "difficulty": "Easy",
+    "ingredients": [
+      "200g plant-based ground meat",
+      "1 small onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1 carrot, finely diced",
+      "1 celery stalk, finely diced",
+      "400g canned crushed tomatoes",
+      "1 tbsp tomato paste",
+      "1/2 cup vegetable broth",
+      "1 tsp dried oregano",
+      "1 tsp dried basil",
+      "1/2 tsp red pepper flakes (optional)",
+      "Salt and black pepper, to taste",
+      "2 tbsp olive oil",
+      "1/2 cup polenta",
+      "2 cups water or vegetable broth",
+      "1 tbsp butter or plant-based alternative",
+      "1/4 cup grated parmesan or nutritional yeast"
+    ],
+    "instructions": [
+      "Heat 1 tbsp of olive oil in a pan over medium heat.",
+      "Add the onion, garlic, carrot, and celery, and sauté until softened, about 5 minutes.",
+      "Add the plant-based ground meat and cook until browned, breaking it apart with a spoon.",
+      "Stir in the tomato paste, crushed tomatoes, vegetable broth, oregano, basil, red pepper flakes, salt, and black pepper.",
+      "Simmer for 20-25 minutes, stirring occasionally, until the sauce thickens.",
+      "While the sauce is cooking, prepare the polenta: bring 2 cups of water or vegetable broth to a boil.",
+      "Slowly whisk in the polenta, stirring constantly to prevent lumps.",
+      "Reduce heat to low and cook, stirring frequently, for about 10 minutes until thick and creamy.",
+      "Stir in the butter and grated parmesan or nutritional yeast, then remove from heat.",
+      "Serve the polenta in bowls, topped with the fake meat ragu.",
+      "Garnish with fresh basil or extra parmesan, if desired."
+    ]
+  }
+]

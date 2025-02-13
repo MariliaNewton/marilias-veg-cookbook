@@ -1,39 +1,19 @@
 import previousUrl from "../assets/images/previous.svg";
 import nextUrl from "../assets/images/next.svg";
+import { fetchRecipes } from "../utils/fetchFunctions";
+import { useEffect, useState } from "react";
 
 export default function LatestRecipes() {
-  const testFetchLatestRecipes = [
-    {
-      id: 1,
-      name: "Fake meat ragu & polenta",
-      category: "main",
-      imageUrl: "/testLatestRecipes/fakeMeatRagu.jpg",
-    },
-    {
-      id: 2,
-      name: "Lentil Red Curry",
-      category: "dinner",
-      imageUrl: "/testLatestRecipes/lentilRedCurry.jpg",
-    },
-    {
-      id: 3,
-      name: "Soja in Tomato Sauce",
-      category: "main",
-      imageUrl: "/testLatestRecipes/sojaMeatSauce.jpg",
-    },
-    {
-      id: 4,
-      name: "Lentil Red Curry",
-      category: "main",
-      imageUrl: "/testLatestRecipes/lentilRedCurry.jpg",
-    },
-    {
-      id: 5,
-      name: "Fake meat ragu & polenta",
-      category: "main",
-      imageUrl: "/testLatestRecipes/fakeMeatRagu.jpg",
-    },
-  ];
+  const [lastRecipes, setLastRecipes] = useState([]);
+  const numberOfRecipesShown = 5;
+
+  useEffect(() => {
+    async function loadRecipes() {
+      const data = await fetchRecipes();
+      setLastRecipes(data.slice(-numberOfRecipesShown));
+    }
+    loadRecipes();
+  }, []);
 
   return (
     <section className="latest-recipes-section">
@@ -49,7 +29,7 @@ export default function LatestRecipes() {
         </div>
       </div>
       <div className="recipes-thumbnail-container">
-        {testFetchLatestRecipes.map((recipe) => (
+        {lastRecipes.map((recipe) => (
           <div key={recipe.id}>
             <img src={recipe.imageUrl} alt="" />
             <h3>{recipe.name}</h3>

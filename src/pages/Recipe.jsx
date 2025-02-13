@@ -2,7 +2,7 @@ import recipeHeaderBgUrl from "../assets/images/recipe-header-bg.svg";
 import recipeTime from "../assets/images/time.svg";
 import recipeServings from "../assets/images/servings.svg";
 
-export default function RecipePage() {
+export default function Recipe() {
   const testFetchRecipe = {
     id: 1,
     name: "Fake Meat Ragu & Polenta",
