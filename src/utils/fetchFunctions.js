@@ -21,8 +21,8 @@ export async function fetchRecipe(id) {
         `Failed to fetch recipes: ${res.status} ${res.statusText}`
       );
     const data = await res.json();
-    const recipe = data.filter((rec) => rec.id === id);
-    return recipe;
+    const recipe = data.filter((rec) => rec.id === +id);
+    return recipe[0];
   } catch (err) {
     console.error(("Error fetching recipes:", err));
     return [];

@@ -2,6 +2,7 @@ import previousUrl from "../assets/images/previous.svg";
 import nextUrl from "../assets/images/next.svg";
 import { fetchRecipes } from "../utils/fetchFunctions";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function LatestRecipes() {
   const [lastRecipes, setLastRecipes] = useState([]);
@@ -31,11 +32,13 @@ export default function LatestRecipes() {
       <div className="recipes-thumbnail-container">
         {lastRecipes.map((recipe) => (
           <div key={recipe.id}>
-            <img src={recipe.imageUrl} alt="" />
-            <h3>{recipe.name}</h3>
-            <div className="latest-recipes-tag">
-              {recipe.category.toUpperCase()}
-            </div>
+            <Link to={`recipes/${recipe.id}`}>
+              <img src={recipe.imageUrl} alt="" />
+              <h3>{recipe.name}</h3>
+              <div className="latest-recipes-tag">
+                {recipe.category.toUpperCase()}
+              </div>
+            </Link>
           </div>
         ))}
       </div>

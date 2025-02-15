@@ -216,6 +216,11 @@ header > nav {
   margin: 1rem 0.25rem;
 }
 
+.recipes-thumbnail-container a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
 .latest-recipes-tag {
   z-index: 100;
   background-color: var(--orange);
@@ -351,18 +356,18 @@ footer a {
   font-size: 1.5rem;
 }
 
-.filtered-recipes-page {
+.recipes-page {
   padding: 2rem 4.7rem;
 }
 
-.filtered-recipes-page a {
+.recipes-page a {
   text-decoration: none;
   color: var(--blue);
   /*font-family: "Braah One"; */
   /* font-size: 1.5rem; */
 }
 
-.filtered-recipes-page h1 {
+.recipes-page h1 {
   font-size: 6.25rem;
   font-family: "Big Shoulders Inline Display";
   font-weight: 400;
@@ -370,7 +375,7 @@ footer a {
   margin: 0 0 2rem 0;
 }
 
-.filtered-recipes-page > div {
+.recipes-page > div {
   display: grid;
   gap: 3.5rem;
   grid-template-columns: repeat(auto-fill, minmax(18.25rem, 1fr));
@@ -378,14 +383,26 @@ footer a {
   color: var(--blue);
 }
 
-.filtered-recipes-page img {
+div.recipes-no-results {
+  display: inline-block;
+  justify-items: left;
+  width: 100%;
+}
+
+div.recipes-no-results h2 {
+  color: var(--orange);
+  max-width: 100%;
+  text-align: left;
+}
+
+.recipes-page img {
   height: 20.75rem;
   width: 18.25rem;
   object-fit: cover;
   border-radius: 1.6rem;
 }
 
-.filtered-recipes-page h2 {
+.recipes-page h2 {
   margin: 1rem 0.25rem;
   max-width: 18.25rem;
   text-align: center;
