@@ -1,8 +1,17 @@
 import menuBgUrl from "../assets/images/menu-bg.svg";
 import closeMenuUrl from "../assets/images/close-menu.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Menu({ handleClick }) {
+  const navigate = useNavigate();
+
+  function manualSearch(formData) {
+    const searchQuery = formData.get("search").trim();
+    if (searchQuery) {
+      navigate(`/recipes/?filter=${encodeURIComponent(searchQuery)}`);
+    }
+  }
+
   return (
     <div className="menu">
       <img src={menuBgUrl} alt="" />
@@ -10,9 +19,9 @@ export default function Menu({ handleClick }) {
         <button onClick={handleClick}>
           <img src={closeMenuUrl} alt="" />
         </button>
-        <div className="menu-search">
-          <input type="text" name="" id="" />
-        </div>
+        <form action={manualSearch} className="menu-search">
+          <input type="text" name="search" id="" />
+        </form>
         <Link to="/recipes/?filter=all" onClick={handleClick}>
           All recipes
         </Link>

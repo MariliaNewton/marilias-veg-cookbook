@@ -36,6 +36,7 @@
 :root {
   --white: #fff;
   --orange: #ff451c;
+  --orange-transp: rgba(255, 69, 28, 0.2);
   --beige: #fdf7ec;
   --blue: #070f5d;
 }
@@ -65,7 +66,13 @@ header {
   position: fixed;
   top: 0;
   background-color: var(--beige);
-  z-index: 1000;
+  border-bottom: 0.125rem solid var(--beige);
+  z-index: 500;
+  transition: border-bottom 0.5s;
+}
+
+header.scrolled {
+  border-bottom: 0.125rem solid var(--orange);
 }
 
 header button {
@@ -195,7 +202,8 @@ header > nav {
   padding-top: 3rem;
   display: flex;
   gap: 7.5rem;
-  overflow-y: hidden;
+  overflow: hidden;
+  scroll-behavior: smooth;
   color: var(--blue);
   font-size: 1.5rem;
   text-align: center;
@@ -509,7 +517,7 @@ div.recipes-no-results h2 {
 
 .menu {
   position: fixed;
-  z-index: 9999;
+  z-index: 200;
   top: 0;
   right: 0;
   height: 33.9375rem;
@@ -530,7 +538,7 @@ div.recipes-no-results h2 {
   font-size: 1.5rem;
   color: var(--white);
   position: absolute;
-  z-index: 99999;
+  z-index: 300;
   top: 0;
   right: 0;
 
@@ -573,4 +581,48 @@ div.recipes-no-results h2 {
   color: var(--white);
   font-family: "Braah One";
   font-size: 1.5rem;
+}
+
+/* img {
+  display: none;
+} */
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--beige);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-overlay > img {
+  position: absolute;
+  height: 9rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%) rotate(-40deg);
+}
+
+.loader {
+  width: 14rem;
+  height: 14rem;
+  border: 0.3125rem solid var(--orange-transp);
+  border-top: 0.3125rem solid var(--orange);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  position: relative;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
