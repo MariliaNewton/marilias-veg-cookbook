@@ -4,9 +4,15 @@ export default function Footer() {
       <h2>MARILIA'S VEG COOKBOOK</h2>
       <div className="footer-info">
         <p>Portugal</p>
-        <p>No idea what to put here</p>
-        <p>I dont know</p>
-        <a href="">mariliavegcookbook@gmail.com</a>
+        <p>
+          Designed & developed by{" "}
+          <a href="https://github.com/MariliaNewton" target="blank">
+            Marilia
+          </a>
+        </p>
+        <a href="mailto:mariliavegcookbook@gmail.com">
+          mariliavegcookbook@gmail.com
+        </a>
       </div>
     </footer>
   );

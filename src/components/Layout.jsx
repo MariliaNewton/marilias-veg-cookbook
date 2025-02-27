@@ -61,7 +61,7 @@ export default function Layout() {
       {loading && <Loader />}
       <Header isScrolled={isScrolled} />
       <div className="wrapper">
-        <Outlet />
+        <Outlet context={{ isScrolled }} />
       </div>
       <Footer />
     </>

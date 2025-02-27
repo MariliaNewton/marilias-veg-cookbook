@@ -75,14 +75,6 @@ header.scrolled {
   border-bottom: 0.125rem solid var(--orange);
 }
 
-header button {
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
 header > nav {
   display: flex;
   align-items: center;
@@ -91,10 +83,22 @@ header > nav {
   padding: 0rem 2.5rem;
 }
 
+nav > button {
+  height: 2rem;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+nav > button img {
+  height: 100%;
+}
+
 .carrot-logo {
   height: 7.5rem;
   transform: rotate(-40deg);
-  margin-left: 1rem;
 }
 
 .cover-section {
@@ -111,18 +115,34 @@ header > nav {
   font-family: "Big Shoulders Inline Display";
   font-weight: 500;
   text-align: center;
-  margin: 0 0 4.4rem 0;
+  margin: 0 1.5rem 4.4rem 1.5rem;
 }
 
 .cover-section img {
   position: absolute;
   bottom: 1.5rem;
+  animation: move 0.5s infinite alternate ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.cover-section img.scrolled {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0.75rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
 }
 
 .about-me-section {
   display: flex;
   justify-content: space-between;
-  height: calc(100vh - 8.8rem);
+  height: calc(100% - 8.8rem);
   max-height: calc(100vw / 1.78);
 }
 
@@ -241,6 +261,9 @@ header > nav {
 
 .sign-section {
   margin: 8.75rem 0rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
 }
 
 .sign-section h2 {
@@ -249,13 +272,27 @@ header > nav {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
+
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .browse-section {
   position: relative;
-  height: calc(100vh - 8.8rem);
-  max-height: 65rem;
-  max-height: calc(100vw / 1.8);
+  height: 100vh;
+  /* height: calc(100vh - 8.8rem); */
+  max-height: 50rem;
+  /* max-height: calc(100vw / 1.8); */
   margin-bottom: 8.75rem;
 }
 
@@ -280,7 +317,7 @@ header > nav {
 .browse-section > img {
   position: absolute;
   width: 100%;
-  max-width: 120rem;
+  max-width: 100rem;
   top: 50%;
   left: 52%;
   transform: translate(-50%, -50%);
@@ -359,7 +396,9 @@ footer p {
 }
 
 footer a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 0.175rem;
+  text-underline-offset: 0.375rem;
   color: var(--orange);
   font-size: 1.5rem;
 }
@@ -420,11 +459,10 @@ div.recipes-no-results h2 {
   background-color: var(--orange);
   display: flex;
   width: 100vw;
-  height: calc(92vh - 8.8rem);
+  max-height: 50rem;
 }
 
 .recipe-page-top > img {
-  height: calc(100%);
   width: 45%;
   object-fit: cover;
 }
@@ -441,6 +479,7 @@ div.recipes-no-results h2 {
   left: 52%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  max-height: 100%;
 }
 
 .recipe-page-top > div h1 {
@@ -485,6 +524,13 @@ div.recipes-no-results h2 {
   justify-content: center;
 }
 
+.recipe-time img {
+  height: 4.6rem;
+}
+.recipe-servings img {
+  height: 4.1rem;
+}
+
 .recipe-time p,
 .recipe-servings p {
   margin: 0;
@@ -501,7 +547,7 @@ div.recipes-no-results h2 {
 
 .recipe-page-bottom ol {
   padding-left: 2rem;
-  max-width: 37rem;
+  /* max-width: 37rem; */
 }
 
 .recipe-page-bottom li {
@@ -541,15 +587,18 @@ div.recipes-no-results h2 {
   z-index: 300;
   top: 0;
   right: 0;
-
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-end; */
-
   display: grid;
   justify-items: end;
   align-items: center;
   grid-template-rows: repeat(7, minmax(0, 1fr));
+}
+
+.menu > div button {
+  height: 2rem;
+}
+
+.menu > div button img {
+  height: 2rem;
 }
 
 .menu-search {
@@ -582,10 +631,6 @@ div.recipes-no-results h2 {
   font-family: "Braah One";
   font-size: 1.5rem;
 }
-
-/* img {
-  display: none;
-} */
 
 .loader-overlay {
   position: fixed;
@@ -624,5 +669,363 @@ div.recipes-no-results h2 {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1340px), (max-device-width: 1340px) {
+  html {
+    font-size: 14px;
+  }
+  .menu {
+    height: 35.71rem;
+    width: 26.93rem;
+  }
+
+  .menu > div {
+    padding: 0.93rem 1.43rem;
+    height: 90%;
+  }
+
+  .menu-search input {
+    font-size: 2.14rem;
+    width: 14.29rem;
+  }
+
+  .menu a {
+    font-size: 2.14rem;
+  }
+
+  .text-about-container img {
+    width: 145%;
+  }
+
+  .text-about-container p {
+    font-size: 1.5rem;
+  }
+
+  .text-about-container > div {
+    width: 90%;
+  }
+
+  .browse-section h2 {
+    font-size: 5rem;
+  }
+
+  .browse-section a {
+    font-size: 2.5rem;
+  }
+
+  .browse-section {
+    max-height: calc(100vw / 1.8);
+  }
+
+  .recipe-page-top {
+    max-height: 50vh;
+  }
+
+  /* .recipe-page-top > div h1 {
+    font-size: 5rem;
+  } */
+
+  footer > h2 {
+    font-size: 5rem;
+  }
+
+  .recipes-thumbnail-container {
+    overflow: scroll;
+    scrollbar-color: var(--orange);
+    scrollbar-width: 2rem;
+  }
+
+  .recipes-thumbnail-container::-webkit-scrollbar {
+    height: 0.5rem;
+    border-radius: 100%;
+    width: 0;
+  }
+
+  .recipes-thumbnail-container::-webkit-scrollbar-track {
+    background-color: var(--orange-transp);
+    border-radius: 1rem;
+  }
+
+  .recipes-thumbnail-container::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+    border-radius: 1rem;
+  }
+}
+@media (max-width: 819px), (max-device-width: 819px) {
+  html {
+    font-size: 10px;
+  }
+
+  .menu {
+    height: 50rem;
+    width: 37.75rem;
+  }
+
+  .menu > div {
+    padding: 1.3rem 2rem;
+    height: 90%;
+  }
+
+  .menu-search input {
+    font-size: 3rem;
+    width: 20rem;
+  }
+
+  .menu a {
+    font-size: 3rem;
+  }
+
+  .cover-section img {
+    height: 5rem;
+  }
+
+  .text-about-container img {
+    width: 140%;
+  }
+
+  .text-about-container p {
+    font-size: 1.5rem;
+  }
+
+  .browse-section h2 {
+    font-size: 5.75rem;
+  }
+
+  .recipe-page-top {
+    max-height: 50vh;
+  }
+}
+@media (max-width: 743px), (max-device-width: 743px) {
+  html {
+    font-size: 8px;
+  }
+
+  header > nav {
+    padding: 0rem 1.5rem;
+  }
+
+  .latest-recipes-section {
+    margin: 8.75rem 2.75rem;
+  }
+
+  .latest-btn-container > button {
+    display: none;
+  }
+
+  .browse-section {
+    max-height: 80rem;
+  }
+
+  .browse-section > div {
+    height: 85%;
+  }
+
+  .browse-section h2 > span {
+    display: none;
+  }
+
+  .browse-section h2::after {
+    content: "RECIPE COLLECTIONS";
+    width: 80%;
+    white-space: wrap;
+  }
+
+  .browse-row-container {
+    max-width: 80%;
+  }
+
+  .browse-row {
+    display: block;
+  }
+
+  .browse-row > a {
+    display: block;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .separation-dots {
+    display: none;
+  }
+
+  .browse-row:nth-child(2) {
+    margin: 0;
+  }
+
+  .browse-section-link {
+    margin-left: 2.72rem;
+  }
+
+  .browse-section > img {
+    transform: translate(-52%, -50%) rotate(90deg);
+    width: 180%;
+    max-width: 90rem;
+  }
+
+  footer {
+    padding: 1rem;
+    height: 16rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  footer > h2 {
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer > div {
+    align-self: center;
+  }
+
+  footer > div p {
+    text-align: center;
+  }
+
+  footer > div p:first-child {
+    display: none;
+  }
+
+  .menu {
+    height: 50rem;
+    width: 37.75rem;
+  }
+
+  .menu > div {
+    padding: 1.3rem 2rem;
+    height: 90%;
+  }
+
+  .menu-search input {
+    font-size: 3rem;
+    width: 20rem;
+  }
+
+  .menu a {
+    font-size: 3rem;
+  }
+
+  .recipes-page {
+    padding: 2rem 2.75rem;
+  }
+
+  .recipes-page > div {
+    gap: 1rem;
+  }
+
+  /* .recipe-page-top {
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+
+  .recipe-page-top > div {
+    margin-top: 3rem;
+  }
+
+  .recipe-page-top > img {
+    width: 90%;
+    height: 40%;
+    border-radius: 1.6rem;
+    align-self: center;
+    margin-bottom: 2.75rem;
+  }
+
+  .recipe-page-bottom {
+    padding: 2.75rem 2.75rem;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2.25rem;
+    font-size: 2.25rem;
+  }
+
+  .recipe-page-bottom-left,
+  .recipe-page-bottom-right {
+    margin: 0;
+    width: 100%;
+  } */
+
+  .recipe-page-bottom-left > div:first-child {
+    margin-bottom: 2.75rem;
+  }
+
+  .recipe-time img {
+    height: 4rem;
+  }
+
+  .recipe-servings img {
+    height: 3.5rem;
+  }
+}
+
+@media (max-width: 520px), (max-device-width: 520px) {
+  .about-me-section {
+    margin-top: 20rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    min-height: 110rem;
+  }
+
+  .about-me-section > div {
+    width: 100%;
+  }
+
+  .text-about-container {
+    height: 80vh;
+  }
+
+  .text-about-container img {
+    width: 170%;
+    max-width: 75rem;
+  }
+
+  .recipe-page-bottom ol {
+    max-width: 100%;
+  }
+
+  .recipe-page-top {
+    max-height: 100vh;
+  }
+
+  .recipe-page-top {
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+
+  .recipe-page-top > div {
+    margin-top: 3rem;
+  }
+
+  .recipe-page-top > img {
+    width: 90%;
+    height: 40%;
+    border-radius: 1.6rem;
+    align-self: center;
+    margin-bottom: 2.75rem;
+  }
+
+  .recipe-page-bottom {
+    padding: 2.75rem 2.75rem;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2.25rem;
+    font-size: 2.25rem;
+  }
+
+  .recipe-page-bottom-left,
+  .recipe-page-bottom-right {
+    margin: 0;
+    width: 100%;
+  }
+
+  .recipe-time img {
+    height: 5rem;
+  }
+
+  .recipe-servings img {
+    height: 4.5rem;
   }
 }

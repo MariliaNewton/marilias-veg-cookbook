@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function LatestRecipes() {
   const [lastRecipes, setLastRecipes] = useState([]);
   const [scrollPos, setScrollPos] = useState(0);
-  const numberOfRecipesShown = 5;
+  const numberOfRecipesShown = 6;
   const containerRef = useRef();
   const thumbnailRef = useRef();
 

@@ -7,8 +7,10 @@ export default function BrowseSection() {
     <section className="browse-section">
       <img src={browseBgUrl} alt="" />
       <div>
-        <h2>BROWSE FOR RECIPE COLLECTIONS</h2>
-        <div>
+        <h2>
+          <span>BROWSE FOR RECIPE COLLECTIONS</span>
+        </h2>
+        <div className="browse-row-container">
           <div className="browse-row">
             <Link to="/recipes?filter=sweet">LUNCH</Link>
             <div className="separation-dots"></div>
@@ -29,7 +31,7 @@ export default function BrowseSection() {
             <Link to="/recipes?filter=brazilian">BRAZILIAN</Link>
           </div>
         </div>
-        <Link to="/recipes?filter=all">
+        <Link to="/recipes?filter=all" className="browse-section-link">
           ALL RECIPES <img src={browseLinkUrl} alt="" />
         </Link>
       </div>
