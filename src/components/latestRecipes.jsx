@@ -3,6 +3,7 @@ import nextUrl from "../assets/images/next.svg";
 import { fetchRecipes } from "../utils/fetchFunctions";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 
 export default function LatestRecipes() {
   const [lastRecipes, setLastRecipes] = useState([]);
@@ -57,9 +58,22 @@ export default function LatestRecipes() {
             <Link to={`recipes/${recipe.id}`}>
               <img src={recipe.imageUrl} alt="" />
               <h3>{recipe.name}</h3>
-              <div className="latest-recipes-tag">
+              <motion.div
+                animate={{
+                  rotateZ: [5, -5, 5, -5, 5, -5, 5, 0].map(
+                    (val) => val * (recipe.id % 2 === 0 ? 1 : -1)
+                  ), // Alternating shake direction
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 0.7,
+                  repeatDelay: 3,
+                  ease: "easeInOut",
+                }}
+                className="latest-recipes-tag"
+              >
                 {recipe.category.toUpperCase()}
-              </div>
+              </motion.div>
             </Link>
           </div>
         ))}

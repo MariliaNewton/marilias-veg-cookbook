@@ -2,11 +2,13 @@ import recipeHeaderBgUrl from "../assets/images/recipe-header-bg.svg";
 import recipeTime from "../assets/images/time.svg";
 import recipeServings from "../assets/images/servings.svg";
 import { fetchRecipe } from "../utils/fetchFunctions";
-import { useParams } from "react-router-dom";
+import { useOutletContext, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 
 export default function Recipe() {
   const [recipe, setRecipe] = useState(null);
+  const { loading } = useOutletContext();
   const { id } = useParams();
 
   useEffect(() => {
@@ -25,7 +27,16 @@ export default function Recipe() {
             <img src={recipe.imageUrl} alt="" />
             <div>
               <img src={recipeHeaderBgUrl} alt=""></img>
-              <h1>{recipe.name}</h1>
+              <motion.h1
+                initial={{ opacity: 0, y: "-35%", x: "-50%" }}
+                animate={{
+                  opacity: loading ? 0 : 1,
+                  y: loading ? "-35%" : "-50%",
+                }}
+                transition={{ duration: 0.6 }}
+              >
+                {recipe.name}
+              </motion.h1>
             </div>
           </div>
           <div className="recipe-page-bottom">

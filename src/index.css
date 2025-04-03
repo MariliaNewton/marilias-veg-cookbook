@@ -354,7 +354,7 @@ nav > button img {
   margin: 2.5rem;
 }
 
-.browse-section > div > a {
+.browse-section .browse-section-link {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -364,6 +364,15 @@ nav > button img {
 
 .browse-section > div img {
   height: 1.25rem;
+}
+
+.link-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.second-link {
+  position: absolute;
 }
 
 footer {
@@ -443,10 +452,16 @@ div.recipes-no-results h2 {
 }
 
 .recipes-page img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* border-radius: 1.6rem; */
+}
+
+.img-recipes-container {
+  border-radius: 1.6rem;
   height: 20.75rem;
   width: 18.25rem;
-  object-fit: cover;
-  border-radius: 1.6rem;
 }
 
 .recipes-page h2 {

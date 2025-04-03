@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { fetchRecipes } from "../utils/fetchFunctions";
 import { Link, useSearchParams } from "react-router-dom";
+import { motion } from "motion/react";
 
 export default function Recipes() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -66,7 +67,18 @@ export default function Recipes() {
         {displayedRecipes.map((recipe) => (
           <div key={recipe.id}>
             <Link to={`${recipe.id}`}>
-              <img src={recipe.imageUrl} alt="" />
+              <motion.div
+                style={{ overflow: "hidden" }}
+                className="img-recipes-container"
+              >
+                <motion.img
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                  src={recipe.imageUrl}
+                  alt=""
+                />
+              </motion.div>
               <h2>{recipe.name}</h2>
             </Link>
           </div>
