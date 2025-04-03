@@ -986,6 +986,7 @@ div.recipes-no-results h2 {
 
   .about-me-section > div {
     width: 100%;
+    margin-top: -30rem;
   }
 
   .text-about-container {
