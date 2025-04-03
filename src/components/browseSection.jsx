@@ -20,7 +20,7 @@ export default function BrowseSection() {
             <AnimatedLink section={"breakfast"} />
             <div className="separation-dots"></div>
 
-            <AnimatedLink section={"diner"} />
+            <AnimatedLink section={"dinner"} />
           </div>
           <div className="browse-row">
             <AnimatedLink section={"vegan"} />
