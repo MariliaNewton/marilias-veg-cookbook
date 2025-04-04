@@ -977,6 +977,10 @@ div.recipes-no-results h2 {
 }
 
 @media (max-width: 520px), (max-device-width: 520px) {
+  .cover-section {
+    min-height: calc(100dvh - 8.8rem);
+  }
+
   .about-me-section {
     margin-top: 20rem;
     flex-direction: column-reverse;
