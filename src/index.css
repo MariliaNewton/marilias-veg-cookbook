@@ -972,6 +972,23 @@ div.recipes-no-results h2 {
     max-width: 75rem;
   }
 
+  .recipes-thumbnail-container::-webkit-scrollbar {
+    height: 0.5rem;
+    border-radius: 100%;
+    width: 0;
+  }
+
+  .recipes-thumbnail-container::-webkit-scrollbar-track {
+    background-color: var(--orange-transp);
+    border-radius: 1rem;
+    margin: 0 4.7rem;
+  }
+
+  .recipes-thumbnail-container::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+    border-radius: 1rem;
+  }
+
   .recipe-page-bottom ol {
     max-width: 100%;
   }
