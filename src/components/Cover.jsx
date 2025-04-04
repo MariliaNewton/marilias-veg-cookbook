@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 export default function Cover() {
   const { isScrolled, loading } = useOutletContext();
   const ref = useRef(null);
+
   return (
     <motion.section ref={ref} className="cover-section">
       <motion.h1
