@@ -229,14 +229,12 @@ nav > button img {
   margin: 0rem -4.7rem;
   overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-width: 2rem;
   padding-bottom: 2rem;
 }
 
 .recipes-thumbnail-container::-webkit-scrollbar {
   height: 0.5rem;
   border-radius: 100%;
-  scrollbar-color: var(--orange);
 }
 
 .recipes-thumbnail-container::-webkit-scrollbar-track {
@@ -949,7 +947,7 @@ div.recipes-no-results h2 {
 
 @media (max-width: 520px), (max-device-width: 520px) {
   .cover-section {
-    min-height: calc(100dvh - 8.8rem);
+    min-height: calc(100svh - 8.8rem);
   }
 
   .about-me-section {
