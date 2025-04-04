@@ -30,25 +30,30 @@ export default function Layout() {
       setTimeout(() => setLoading(false), remainingTime);
     };
 
-    const allImages = document.querySelectorAll("img");
+    let allImages = [];
     let imagesLoaded = 0;
 
-    allImages.forEach((image) => {
-      if (image.complete) {
-        imagesLoaded += 1;
-      } else {
-        image.addEventListener("load", () => {
-          imagesLoaded += 1;
-          if (imagesLoaded === allImages.length) {
-            handleLoad();
-          }
-        });
-      }
-    });
+    setTimeout(() => {
+      allImages = document.querySelectorAll("img");
 
-    if (imagesLoaded === allImages.length) {
-      handleLoad();
-    }
+      allImages.forEach((image) => {
+        if (image.complete) {
+          imagesLoaded += 1;
+        } else {
+          image.addEventListener("load", () => {
+            imagesLoaded += 1;
+            if (imagesLoaded === allImages.length) {
+              handleLoad();
+            }
+          });
+        }
+      });
+
+      if (imagesLoaded === allImages.length) {
+        handleLoad();
+      }
+    }, 1000);
+
     return () => {
       allImages.forEach((image) => {
         image.removeEventListener("load", handleLoad);
