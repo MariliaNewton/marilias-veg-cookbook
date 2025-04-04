@@ -32,6 +32,7 @@ export default function Layout() {
 
     const allImages = document.querySelectorAll("img");
     let imagesLoaded = 0;
+    console.log(allImages);
 
     allImages.forEach((image) => {
       if (image.complete) {
@@ -61,7 +62,7 @@ export default function Layout() {
       {loading && <Loader />}
       <Header isScrolled={isScrolled} />
       <div className="wrapper">
-        <Outlet context={{ isScrolled, loading }} />
+        <Outlet context={{ isScrolled }} />
       </div>
       <Footer />
     </>
