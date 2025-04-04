@@ -222,11 +222,38 @@ nav > button img {
   padding-top: 3rem;
   display: flex;
   gap: 7.5rem;
-  overflow: hidden;
   scroll-behavior: smooth;
   color: var(--blue);
   font-size: 1.5rem;
   text-align: center;
+  margin: 0rem -4.7rem;
+  overflow: scroll;
+  scrollbar-width: 2rem;
+  padding-bottom: 2rem;
+}
+
+.recipes-thumbnail-container::-webkit-scrollbar {
+  height: 0.5rem;
+  border-radius: 100%;
+  width: 0;
+}
+
+.recipes-thumbnail-container::-webkit-scrollbar-track {
+  background-color: var(--orange-transp);
+  border-radius: 1rem;
+  margin: 0 4.7rem;
+}
+
+.recipes-thumbnail-container::-webkit-scrollbar-thumb {
+  background-color: var(--orange);
+  border-radius: 1rem;
+}
+
+.recipes-thumbnail-container > div:first-child {
+  margin-left: 4.7rem;
+}
+.recipes-thumbnail-container > div:last-child {
+  margin-right: 4.7rem;
 }
 
 .recipes-thumbnail-container > div {
@@ -739,34 +766,8 @@ div.recipes-no-results h2 {
     max-height: 50vh;
   }
 
-  /* .recipe-page-top > div h1 {
-    font-size: 5rem;
-  } */
-
   footer > h2 {
     font-size: 5rem;
-  }
-
-  .recipes-thumbnail-container {
-    overflow: scroll;
-    scrollbar-color: var(--orange);
-    scrollbar-width: 2rem;
-  }
-
-  .recipes-thumbnail-container::-webkit-scrollbar {
-    height: 0.5rem;
-    border-radius: 100%;
-    width: 0;
-  }
-
-  .recipes-thumbnail-container::-webkit-scrollbar-track {
-    background-color: var(--orange-transp);
-    border-radius: 1rem;
-  }
-
-  .recipes-thumbnail-container::-webkit-scrollbar-thumb {
-    background-color: var(--orange);
-    border-radius: 1rem;
   }
 }
 @media (max-width: 819px), (max-device-width: 819px) {
@@ -932,37 +933,6 @@ div.recipes-no-results h2 {
     gap: 1rem;
   }
 
-  /* .recipe-page-top {
-    flex-direction: column-reverse;
-    height: 100vh;
-  }
-
-  .recipe-page-top > div {
-    margin-top: 3rem;
-  }
-
-  .recipe-page-top > img {
-    width: 90%;
-    height: 40%;
-    border-radius: 1.6rem;
-    align-self: center;
-    margin-bottom: 2.75rem;
-  }
-
-  .recipe-page-bottom {
-    padding: 2.75rem 2.75rem;
-    flex-direction: column;
-    gap: 2rem;
-    font-size: 2.25rem;
-    font-size: 2.25rem;
-  }
-
-  .recipe-page-bottom-left,
-  .recipe-page-bottom-right {
-    margin: 0;
-    width: 100%;
-  } */
-
   .recipe-page-bottom-left > div:first-child {
     margin-bottom: 2.75rem;
   }
@@ -1000,21 +970,6 @@ div.recipes-no-results h2 {
   .text-about-container img {
     width: 170%;
     max-width: 75rem;
-  }
-
-  .recipes-thumbnail-container {
-    margin: 0rem -4.7rem;
-  }
-
-  .recipes-thumbnail-container::-webkit-scrollbar-track {
-    margin: 0 4.7rem;
-  }
-
-  .recipes-thumbnail-container > div:first-child {
-    margin-left: 3rem;
-  }
-  .recipes-thumbnail-container > div:last-child {
-    margin-right: 5rem;
   }
 
   .recipe-page-bottom ol {
